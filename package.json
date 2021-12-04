@@ -1,0 +1,19 @@
+{
+  "name": "@example/minimal",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "devDependencies": {
+    "astro": "^0.21.10",
+    "tailwindcss": "^2.2.19"
+  },
+  "dependencies": {
+    "@nanostores/persistent": "^0.5.0",
+    "nanostores": "^0.5.7"
+  }
+}

@@ -1,0 +1,20 @@
+---
+// Component imports and setup JavaScript go here!
+import BaseLayout from "../layouts/BaseLayout.astro";
+import LoginForm from "../components/LoginForm.svelte";
+
+const title = "Login Page";
+---
+<script>
+  // A simple navigation guard based on localStorage items
+	if(localStorage.getItem("authentication_token")) {
+		location.replace("/");
+	}
+</script>
+
+<BaseLayout title={title}>
+	<div slot="main" class="min-w-full min-h-screen flex flex-col justify-center items-center" >
+		<!-- We will use the javascript here, need hydration -->
+		<LoginForm client:visible />
+	</div>
+</BaseLayout>

@@ -1,0 +1,28 @@
+---
+// Component imports and setup JavaScript go here!
+const { title } = Astro.props;
+---
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+	<meta name="viewport" content="width=device-width" />
+	<title>{ title }</title>
+	<link rel="stylesheet" href={Astro.resolve('../styles/global.css')}>
+</head>
+
+<body>
+	<header>
+		<slot name="header" />
+	</header>
+	<main>
+		<slot name="main" />
+	</main>
+	<footer>
+		<slot name="footer" />
+	</footer>
+</body>
+
+</html>
