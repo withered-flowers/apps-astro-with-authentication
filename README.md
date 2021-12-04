@@ -12,3 +12,6 @@ How to use this apps?
 - `npm run dev`
 - Form login shown? try to insert the username (`Bret`, `Antonette` ,`Samantha`), password is ignored from the logic.
 - Voila, you will be redirected to "home page"
+
+Demo Page:
+- https://project-authentication-astro.web.app
