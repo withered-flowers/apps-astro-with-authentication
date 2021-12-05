@@ -1,10 +1,9 @@
 ---
 // Component imports and setup JavaScript go here!
 import BaseLayout from "../layouts/BaseLayout.astro";
-// import LoginForm from "../components/LoginForm.svelte";
-import LoginFormReal from "../components/LoginFormReal.svelte";
+import RegisterForm from "../components/RegisterForm.svelte";
 
-const title = "Login Page";
+const title = "Register Page";
 ---
 <script>
   // A simple navigation guard based on localStorage items
@@ -18,9 +17,10 @@ const title = "Login Page";
 		<!-- We will use the javascript here, need hydration -->
 		<!-- <h1>Login (Fake)</h1>
 		<LoginForm client:visible /> -->
-		<h1 class="text-3xl mb-4">Login</h1>
+		<h1 class="text-3xl mb-4">Register</h1>
 		<!-- We will use the javascript here, need hydration -->
-		<LoginFormReal client:visible />
-		<p class="mt-4">or... <a href="/register" class="underline text-blue-400 hover:text-blue-600">register here</a></p>
+		<!-- <LoginFormReal client:visible /> -->
+    <RegisterForm client:visible />
+		<p class="mt-4">or... <a href="/login" class="underline text-blue-400 hover:text-blue-600">back to login</a></p>
 	</div>
 </BaseLayout>

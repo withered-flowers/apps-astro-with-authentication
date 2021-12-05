@@ -1,0 +1,16 @@
+{
+  "development": {
+    "username": "unused",
+    "password": null,
+    "database": "unused",
+    "host": "db.sqlite",
+    "dialect": "sqlite"
+  },
+  "production": {
+    "username": "unused",
+    "password": null,
+    "database": "unused",
+    "host": "db.sqlite",
+    "dialect": "sqlite"
+  }
+}
